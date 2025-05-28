@@ -38,7 +38,7 @@ const Reviews = () => {
    ]
 
    return (
-      <>
+      <div id={'reviews'}>
          <Heading title={'Reviews'} />
          <div className={s.Reviews}>
             <div className={s.text}>
@@ -75,7 +75,7 @@ const Reviews = () => {
                {/* </div> */}
             </div>
          </div>
-      </>
+      </div>
    )
 }
 

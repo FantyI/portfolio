@@ -25,12 +25,12 @@ const Works = () => {
    ]
 
    return (
-      <>
+      <div id={'works'}>
          <Heading title={'Works'} />
          <div className={s.Works}>
             {works.map(work => <ProjectCard data={work} />)}
          </div>
-      </>
+      </div>
    )
 }
 

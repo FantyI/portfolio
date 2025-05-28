@@ -50,8 +50,8 @@ function App() {
     <>
       <Navigation visible={visible} setVisible={setVisible} hide={hide} active={active} />
       <HomePages />
-      <AboutMe id={'about'} />
-      <Skills id={'skills'}/>
+      <AboutMe />
+      <Skills />
       <Works />
       <Reviews />
       <SocialNetworks />

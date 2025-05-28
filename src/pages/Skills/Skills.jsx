@@ -94,7 +94,7 @@ const Skills = () => {
 
    const [isActive, setActive] = useState('All')
    return (
-      <>
+      <div id={'skills'}>
          <Heading title={'Skills & Technologies'} />
          <div className={s.Skills}>
             <div className={s.left}>
@@ -141,7 +141,7 @@ const Skills = () => {
                </div>
             </div>
          </div>
-      </>
+      </div>
    )
 }
 

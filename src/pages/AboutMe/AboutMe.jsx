@@ -20,7 +20,7 @@ const AboutMe = () => {
 
 
     return (
-        <div className={s.AboutMe}>
+        <div className={s.AboutMe} id={'about'}>
             <div className={s.left}>
                 <Description/>
                 <div className={s.wrapCards}>

@@ -10,8 +10,8 @@ const Navigation = ({visible, setVisible, active, hide }) => {
             <ul className={s.listNav}>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="">Work</a></li>
-                <li><a href="">Reviews</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#reviews">Reviews</a></li>
                 <li onClick={() => setVisible(true)}>Contact</li>
                 <li><a href="">Resume</a></li>
             </ul>
