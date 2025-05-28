@@ -10,14 +10,14 @@ import Works from './pages/Works/Works'
 import Reviews from './pages/Reviews/Reviews'
 import SocialNetworks from './components/socialNetworks/socialNetworks'
 import Feedback from './pages/Feedback/Feedback'
+import PopUpNotifications from './components/PopUpNotifications/PopUpNotifications'
 
 function App() {
   const [visible, setVisible] = useState(false)
-
   const [active, setActive] = useState(false)
   const [hide, setHide] = useState(false)
   const [scroll, setScroll] = useState(0)
-
+  const [text, setText] = useState('')
   useEffect(() => {
 
     const handleScroll = () => {
@@ -49,13 +49,14 @@ function App() {
   return (
     <>
       <Navigation visible={visible} setVisible={setVisible} hide={hide} active={active} />
-      <HomePages />
+      <HomePages setVisible={setVisible}/>
       <AboutMe />
       <Skills />
       <Works />
       <Reviews />
       <SocialNetworks />
-      <Feedback visible={visible} setVisible={setVisible} />
+      <Feedback visible={visible} setVisible={setVisible} setText={setText} />
+      <PopUpNotifications text={text} setText={setText}/>
     </>
   )
 }

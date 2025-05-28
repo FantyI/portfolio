@@ -93,6 +93,7 @@ const Skills = () => {
    ]
 
    const [isActive, setActive] = useState('All')
+   const filteredSkills  = skills.filter((skill) => skill.tag.includes(isActive))
    return (
       <div id={'skills'}>
          <Heading title={'Skills & Technologies'} />
@@ -132,11 +133,8 @@ const Skills = () => {
                   </button>
                </div>
                <div className={s.arrSkills}>
-                  {skills.filter((skill) => skill.tag.includes(isActive)).map(data => (
-                     <>
-                        {console.log(data)}
-                        <SkillCard data={data} />
-                     </>
+                  {filteredSkills.map(data => (
+                     <SkillCard data={data} />
                   ))}
                </div>
             </div>

@@ -1,7 +1,7 @@
 import Navigation from '../../components/Navigation/Navigation';
 import s from './style.module.css'
 
-const HomePages = () => {
+const HomePages = ({setVisible}) => {
 
     return (
         <header className={s.HomePages}>
@@ -14,7 +14,7 @@ const HomePages = () => {
                 </div>
                 <div className={s.buttons}>
                     <button className={s.myResume}><a href="">My resume</a></button>
-                    <button className={s.contactMe}><a href="">Contact me</a></button>
+                    <button className={s.contactMe} onClick={() => setVisible(true)}>Contact me</button>
                 </div>
             </div>
         </header>

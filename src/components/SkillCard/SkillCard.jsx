@@ -9,13 +9,11 @@ const SkillCard = ({ data }) => {
 
    useEffect(() => {
       if (refIcon.current) {
-         console.log('||||')
          const svg = refIcon.current.querySelector('svg')
          setFill(svg.firstElementChild.getAttribute('fill'));
       }
-   }, []);
+   }, [data]);
    ///ref={refIcon}
-   console.log(fill)
    return (
       <div
          className={s.SkillCard}

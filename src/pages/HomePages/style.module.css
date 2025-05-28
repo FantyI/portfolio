@@ -45,7 +45,7 @@
     font-size: 2rem;
     background-color: transparent;
     font-weight: 700;
-
+    cursor: pointer;
     a{
         color: var(--colorText);
     }
