@@ -8,7 +8,7 @@ import AboutMe from './pages/AboutMe/AboutMe'
 import Skills from './pages/Skills/Skills'
 import Works from './pages/Works/Works'
 import Reviews from './pages/Reviews/Reviews'
-import SocialNetworks from './components/socialNetworks/socialNetworks'
+import SocialNetworks from './components/SocialNetworks/SocialNetworks'
 import Feedback from './pages/Feedback/Feedback'
 import PopUpNotifications from './components/PopUpNotifications/PopUpNotifications'
 
