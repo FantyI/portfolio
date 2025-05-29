@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from 'react';
-import SocialNetworks from '../../components/socialNetworks/socialNetworks';
+import SocialNetworks from '../../components/SocialNetworks/SocialNetworks';
 import s from './style.module.css'
 
 const Feedback = ({ visible, setVisible, setText }) => {
