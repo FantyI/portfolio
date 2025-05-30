@@ -1,11 +1,14 @@
 import { useEffect, useRef, useState } from 'react'
 import s from './style.module.css'
 
+import externalLink from '../../assets/images/external-link.svg'
+import github from '../../assets/images/github.svg'
+
 const ProjectCard  = ({ data }) => {
    
    return (
       <div className={s.ProjectCard}>
-         <img src={`src/assets/Projects/ImgCard/${data.title}.png`} className={s.img} />
+         <img src={`/images/ImgCard/${data.title}.png`} className={s.img} />
          <div className={s.text}>
             <h2 className={s.title}>{data.title}</h2>
             <div className={s.technologies}>
@@ -18,8 +21,8 @@ const ProjectCard  = ({ data }) => {
                   Details
                </div>
                <div className={s.linkImages}>
-                  <a target='_blank' href={data.github} className={s.linkImg}><img src="src/assets/Projects/github.svg" alt="" /></a>
-                  <a target='_blank' href={data.externalLink} className={s.linkImg}><img src="src/assets/Projects/external-link.svg" alt="" /></a>
+                  <a target='_blank' href={data.github} className={s.linkImg}><img src={github} alt="" /></a>
+                  <a target='_blank' href={data.externalLink} className={s.linkImg}><img src={externalLink} alt="" /></a>
                </div>
             </div>
          </div>

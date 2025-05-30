@@ -101,7 +101,7 @@ const Skills = () => {
             <div className={s.left}>
                <div className={s.title}><span className={s.backlight}>Full</span>-stack</div>
                <p className={s.text}>Full-stack development combines all three areas, allowing a specialist to cover the entire product creation process. This approach provides a deep understanding of the relationships between design, interface, and backend, but requires constant training and trend tracking in all areas.</p>
-               <div className={s.canvas}><img src='src/assets/skills.svg' /></div>
+               <div className={s.canvas}><img src='/images/canvas.png' /></div>
             </div>
             <div className={s.rigth}>
                <div className={s.sorting}>

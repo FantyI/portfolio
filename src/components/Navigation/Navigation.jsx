@@ -6,7 +6,7 @@ const Navigation = ({visible, setVisible, active, hide }) => {
 
     return (
         <nav className={`${s.navigate} ${active && s.active} ${hide && s.hide}`}>
-            <h1 className={s.logo}>FantyI</h1>
+            <h1><a  className={s.logo} href="#logo">FantyI</a></h1>
             <ul className={s.listNav}>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>

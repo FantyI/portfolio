@@ -1,8 +1,16 @@
+import { useEffect, useRef, useState } from 'react'
 import s from './style.module.css'
 const SocialNetworks = () => {
+   const refBlock = useRef(null)
+   const [fixedPosition, setFixedPosition] = useState()
+   useEffect(() => {
+      setFixedPosition(refBlock.current.offsetWidth >= 1440 ? true : false)
+      console.log(refBlock.current.offsetWidth >= 1440 ? true : false)
+
+   }, [])
 
    return (
-      <div className={s.SocialNetworks}>
+      <div className={`${s.SocialNetworks} ${fixedPosition && s.fixedPosition}`} ref={refBlock} >
          <a target='_blank' href="https://github.com/FantyI">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                <path d="M20 28C20 28 20 24.9733 20 24C20 23.16 20.2 21.3867 19.3333 20.6667C21.1867 20.4933 22.64 19.8933 24 18.6667C25.36 17.44 26 15.5867 26 12.6667C26 10.6667 25.6667 9.33333 24.6667 8C25.0533 6.96 25.12 5.33333 24.6667 4C22.5867 4 20.7067 5.42667 20 6C19.48 5.86667 18.2267 5.33333 16 5.33333C13.7733 5.33333 12.52 5.86667 12 6C11.2933 5.42667 9.41333 4 7.33333 4C6.88 5.33333 6.94667 6.96 7.33333 8C6.33333 9.33333 6 10.6667 6 12.6667C6 15.5867 6.64 17.44 8 18.6667C9.36 19.8933 10.8133 20.4933 12.6667 20.6667C11.8 21.3867 12 23.16 12 24C12 24.9733 12 28 12 28" stroke="#676767" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round" />

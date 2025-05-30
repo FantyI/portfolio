@@ -4,7 +4,7 @@ import s from './style.module.css'
 const HomePages = ({setVisible}) => {
 
     return (
-        <header className={s.HomePages}>
+        <header className={s.HomePages} id='logo'>
             {/* <Navigation /> */}
 
             <div className={s.greeting}>

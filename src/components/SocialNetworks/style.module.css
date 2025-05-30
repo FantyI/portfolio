@@ -1,7 +1,22 @@
-.SocialNetworks{
+.SocialNetworks {
    display: flex;
    align-items: center;
    justify-content: center;
    gap: 20px;
    padding: 20px;
 }
+
+.fixedPosition{
+   flex-flow: column;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      padding-bottom: 0;
+}
+
+.fixedPosition::after {
+      content: '';
+      height: 100px;
+      width: 2px;
+      background-color: var(--gray);
+   }

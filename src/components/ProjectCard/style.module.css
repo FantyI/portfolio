@@ -1,6 +1,7 @@
 .ProjectCard{
    box-sizing: border-box;
    width: 390px;
+   
    background-color: var(--blockBackground);
    border: 1px solid var(--blockBorder);
    overflow: hidden;
@@ -9,7 +10,8 @@
 }
 
 .img{
-   width: inherit;
+   width: 390px;
+   height: 200px;
 }
 
 .text{

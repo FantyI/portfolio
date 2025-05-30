@@ -23,6 +23,12 @@
 .canvas{
    margin: 50px 0 0 25px;
    position: relative;
+   width: 490px;
+   
+   img{
+      height: 445px;
+
+   }
 }
 
 .canvas::before{

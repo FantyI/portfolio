@@ -14,6 +14,7 @@
 
 .logo {
     font-size: 4rem;
+    color: var(--colorText);
 }
 
 .listNav {
@@ -38,4 +39,3 @@
 .hide{
     top: -200px
 }
-

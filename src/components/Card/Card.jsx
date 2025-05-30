@@ -5,7 +5,7 @@ const Card = ({data}) => {
    return (
       <div className={s.card}>
          <div className={s.icon}>
-            <img src={icon} alt="" />
+            {icon} 
          </div>
          <div className={s.name}>{name}</div>
          <p className={s.text}>{text}</p>
