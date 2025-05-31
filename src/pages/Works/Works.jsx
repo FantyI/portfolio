@@ -17,10 +17,10 @@ const Works = () => {
          technologies: ['html', 'css']
       },
       {
-         title: 'WebCode',
-         github: 'https://github.com/FantyI/hackathon',
-         externalLink: 'https://hackathon-five-nu.vercel.app/',
-         technologies: ['html', 'css']
+         title: 'BuildTheExpert',
+         github: 'https://github.com/FantyI/stroyexpert-frontend',
+         externalLink: 'https://stroyexpert.vercel.app/',
+         technologies: ['react', 'css']
       },
    ]
 
