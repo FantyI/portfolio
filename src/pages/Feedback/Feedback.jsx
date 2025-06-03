@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import SocialNetworks from '../../components/SocialNetworks/SocialNetworks';
 import s from './style.module.css'
 
-const Feedback = ({ visible, setVisible, setText }) => {
+const Feedback = ({ visible, setVisible, textNotifications }) => {
    useEffect(() => {
       if (visible) {
          document.body.style.overflow = 'hidden'
@@ -14,11 +14,9 @@ const Feedback = ({ visible, setVisible, setText }) => {
    const copyTextToClipboard = async (text) => {
       try {
          await navigator.clipboard.writeText(text);
-         setText('Текст успешно скопирован в буфер обмена!')
-         console.log('Текст успешно скопирован в буфер обмена!');
+         textNotifications('The text has been successfully copied to the clipboard!')
       } catch (err) {
-         setText('Текст успешно скопирован в буфер обмена!')
-         console.error('Ошибка:', err);
+         textNotifications('ERROR')
       }
    };
 

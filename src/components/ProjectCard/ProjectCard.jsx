@@ -4,7 +4,7 @@ import s from './style.module.css'
 import externalLink from '../../assets/images/external-link.svg'
 import github from '../../assets/images/github.svg'
 
-const ProjectCard  = ({ data }) => {
+const ProjectCard  = ({ data, textNotifications }) => {
    
    return (
       <div className={s.ProjectCard}>
@@ -17,7 +17,7 @@ const ProjectCard  = ({ data }) => {
                ))}
             </div>
             <div className={s.link}>
-               <div className={s.details}>
+               <div className={s.details} onClick={() => textNotifications('At the moment, "Details" is not available.')}>
                   Details
                </div>
                <div className={s.linkImages}>

@@ -2,7 +2,7 @@ import Heading from '../../components/Heading/Heading';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import s from './style.module.css'
 
-const Works = () => {
+const Works = ({textNotifications}) => {
    const works = [
       {
          title: 'WebCode',
@@ -28,7 +28,7 @@ const Works = () => {
       <div id={'works'}>
          <Heading title={'Works'} />
          <div className={s.Works}>
-            {works.map(work => <ProjectCard data={work} />)}
+            {works.map(work => <ProjectCard data={work} textNotifications={textNotifications}/>)}
          </div>
       </div>
    )

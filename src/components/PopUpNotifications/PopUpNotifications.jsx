@@ -6,12 +6,16 @@ const PopUpNotifications = ({ text, setText }) => {
       
    // }
 
-   if (text) {
-      setTimeout(() => {
-         console.log('ddd')
-         setText('')
-      }, 4000)
-   }
+   // if (text) {
+   //    console.log(text);
+      
+   //    setTimeout(() => {
+   //       console.log('2');
+
+   //       setText('')
+   //    }, 4000)
+   // }
+   
 
 
    return (

@@ -17,17 +17,21 @@ function App() {
   const [hide, setHide] = useState(false)
   const [scroll, setScroll] = useState(0)
   const [text, setText] = useState('')
+
+  const textNotifications = async (text) => {
+    setTimeout(() => setText(''), 0)
+    setTimeout(() => setText(text), 100)
+    setTimeout(() => setText(''), 4000)
+  }
   useEffect(() => {
 
     const handleScroll = () => {
       if (window.scrollY < 130) {
         return setActive(false)
       }
-      if (scroll < window.scrollY) {
-        console.log('Показать')
+      if (scroll < window.scrollY ) {
         setHide(true)
       } else {
-        console.log('Скрыть')
         setHide(false)
       }
 
@@ -48,13 +52,13 @@ function App() {
   return (
     <>
       <Navigation visible={visible} setVisible={setVisible} hide={hide} active={active} />
-      <HomePages setVisible={setVisible}/>
+      <HomePages textNotifications={textNotifications} setVisible={setVisible} setText={setText}/>
       <AboutMe />
       <Skills />
-      <Works />
+      <Works textNotifications={textNotifications}/>
       <Reviews />
       <SocialNetworks />
-      <Feedback visible={visible} setVisible={setVisible} setText={setText} />
+      <Feedback visible={visible} setVisible={setVisible} textNotifications={textNotifications} />
       <PopUpNotifications text={text} setText={setText}/>
     </>
   )

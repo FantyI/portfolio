@@ -3,19 +3,23 @@
     flex-flow: column;
     max-height: 800px;
     height: 800px;
+    
     background:
-        radial-gradient(rgba(11, 9, 10, .4) , rgba(11, 9, 10, 1) 75%),
+        radial-gradient(rgba(11, 9, 10, .4), rgba(11, 9, 10, 1) 75%),
         url('/images/homeBackgroundImg.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.greeting{
+.greeting {
     margin: auto;
     align-self: center;
     justify-self: center;
     /* transform: translateY(-50%); */
 }
 
-.text{
+.text {
     font-size: 6.4rem;
     font-weight: 700;
     display: flex;
@@ -24,11 +28,11 @@
     justify-content: center;
 }
 
-.highlighting{
+.highlighting {
     color: var(--highlightingColor);
 }
 
-.buttons{
+.buttons {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,7 +41,7 @@
 }
 
 .myResume,
-.contactMe{
+.contactMe {
     width: 180px;
     height: 40px;
     border-radius: 25px;
@@ -46,15 +50,17 @@
     background-color: transparent;
     font-weight: 700;
     cursor: pointer;
-    a{
+
+    /* a {
         color: var(--colorText);
-    }
+    } */
 }
 
-.myResume{
+.myResume {
     background-color: var(--colorText);
-
-    a{
+    color: var(--highlightingColor);
+    border: none;
+    a {
         color: var(--highlightingColor);
     }
 }
